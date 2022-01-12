@@ -8,6 +8,10 @@ simple internal docker container check via http endpoint
 
 > ./http_healthcheck.sh http://localhost:3000/healthcheck
 
+check exit code
+
+> echo $?
+
 ### in Dockerfile
 
 > HEALTHCHECK CMD ./http_healthcheck.sh http://localhost:3000/healthcheck
