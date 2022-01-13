@@ -1,5 +1,5 @@
 #!/bin/sh
-##### https://github.com/antirek/http_healthcheck.sh
+##### https://github.com/antirek/http_healthcheck
 
 RESPONSE=$(curl --silent --retry 3 --output /dev/null --write-out '%{http_code}' $1)
 
